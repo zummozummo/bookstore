@@ -1,0 +1,176 @@
+{
+  "info": {
+    "_postman_id": "85a85d53-f744-48ce-a45b-ecfc5db6f9ab",
+    "name": "task",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "9473108",
+    "_collection_link": "https://galactic-spaceship-756200.postman.co/workspace/memorymap~ebb185db-34bf-4b7a-8736-e24889b4b124/collection/9473108-85a85d53-f744-48ce-a45b-ecfc5db6f9ab?action=share&source=collection_link&creator=9473108"
+  },
+  "item": [
+    {
+      "name": "add books",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": 2,\n    \"title\": \"one\",\n    \"author\": \"xz\",\n    \"price\": \"22\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9001/v1/books",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "9001",
+          "path": ["v1", "books"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get all books",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": 1,\n    \"title\": \"one\",\n    \"author\": \"xz\",\n    \"price\": \"22\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9001/v1/books",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "9001",
+          "path": ["v1", "books"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create user",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": 1,\n    \"title\": \"one\",\n    \"author\": \"xz\",\n    \"price\": \"22\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9001/v1/books",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "9001",
+          "path": ["v1", "books"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get all users",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9001/v1/users",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "9001",
+          "path": ["v1", "users"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "add to cart",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"bookId\":\"1\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9001/v1/users/:userId/cart",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "9001",
+          "path": ["v1", "users", ":userId", "cart"],
+          "variable": [
+            {
+              "key": "userId",
+              "value": "pvnk9999"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "place order",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"bookId\":\"1\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:9001/v1/users/:userId/cart",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "9001",
+          "path": ["v1", "users", ":userId", "cart"],
+          "variable": [
+            {
+              "key": "userId",
+              "value": "pvnk9999"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
