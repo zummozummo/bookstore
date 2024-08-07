@@ -1,7 +1,7 @@
 # Bookstore
 
 This project implements a simple bookstore system with functionalities for managing books, users, and orders.
-Code is skaffolded in a way that it can be integrated with DB, logging, etc (written in a day)
+Code is skaffolded in a way that it can be integrated with DB, logging, etc.
 
 ## Table of Contents
 
@@ -21,4 +21,4 @@ Code is skaffolded in a way that it can be integrated with DB, logging, etc (wri
 
 ## api-endpoints
 
-[text](../../task.postman_collection.json) ---> please refer this for curl request
+[text](../../curl.postman_collection.json) ---> please refer this for curl request
